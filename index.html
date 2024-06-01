@@ -11,12 +11,29 @@
             }
             header {
                 background: rgb(253, 183, 183);
-                padding: 100px           
+                padding: 20px;          
             }
             section {
                 background: whitesmoke;
                 color: gray;
                 padding: 20px;
+                display: flex;
+                flex-direction: row;
+            }
+            div {
+                background: rgb(225, 210, 250);
+                margin: auto;
+                width: 100px;
+
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            li {
+                display: inline;
+                margin-right: 10px;
             }
             footer {
                 background: black;
@@ -26,8 +43,21 @@
         </style>
     </head>
     <body>
-        <header>header</header>
-        <section>triple section</section>
+        <header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Location</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <h1>Introduction</h1>
+        </header>
+        <section>
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+        </section>
         <section>lower section</section>
         <footer>footer</footer>
 
