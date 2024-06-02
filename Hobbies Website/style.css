@@ -11,13 +11,13 @@ header {
     background-image: url(images/estantedelivros.jpg);
     background-size: 100%;
     background-position: center;
-    height: 400px;
+    height: 260px;
     padding: 20px;
     text-align: center;          
 }
 h1 {
     color: white;
-    font-family: Dancing Script;
+    font-family: Dancing Script
 }
 a {
     text-decoration: none;
@@ -40,6 +40,11 @@ li {
     border-radius: 3px;
     padding: 2px;
     margin-left: 20px;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 383px) {
+    
 }
 
 /* SECTION */ 
@@ -72,6 +77,14 @@ section {
 .features figure img {
     border-radius: 50px;
     width: 200px
+}
+
+/* DIVS */
+div {
+    background: rgb(225, 210, 250);
+    margin: auto;
+    width: 100px;
+    border-radius: 4px;
 }
 
 /* FOOTER */
