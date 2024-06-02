@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* HEADER  */
 header {
     background: rgb(253, 183, 183);
     background-image: url(images/estantedelivros.jpg);
@@ -23,6 +25,15 @@ a {
 a:hover {
     text-decoration: underline;
 }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
 li {
     display: inline-block;
     background-color: antiquewhite;
@@ -30,6 +41,8 @@ li {
     padding: 2px;
     margin-left: 20px;
 }
+
+/* SECTION */ 
 section {
     background: whitesmoke;
     color: gray;
@@ -37,6 +50,8 @@ section {
     display: flex;
     flex-direction: row;
 }
+
+/* FEATURES */
 .features {
     background: white;
     color: gray;
@@ -44,21 +59,22 @@ section {
     display: flex;
     flex-direction: row;
 }
-div {
-    background: rgb(225, 210, 250);
+.features figure {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin: auto;
+    text-align: end;
     width: 100px;
-    border-radius: 4px;
+    width: 100%;
 }
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.features figure img {
+    border-radius: 50px;
+    width: 200px
 }
-li {
-    display: inline-block;
-    margin-right: 10px;
-}
+
+/* FOOTER */
 footer {
     background: black;
     color: white;
