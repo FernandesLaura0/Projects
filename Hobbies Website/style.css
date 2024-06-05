@@ -95,7 +95,14 @@ div {
     display: flex;
     flex-direction: row;
 }
-.genres figure {
+.images {
+    background: whitesmoke;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.images figure {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -105,7 +112,7 @@ div {
     width: 100px;
     width: 100%;
 }
-.genres figure img {
+.images figure img {
     border-radius: 50px;
     width: 200px
 }
