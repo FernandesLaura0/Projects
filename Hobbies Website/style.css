@@ -96,7 +96,7 @@ div {
     flex-direction: row;
 }
 .images {
-    background: whitesmoke;
+    background: rgb(212, 245, 191);
     color: gray;
     padding: 20px;
     display: flex;
