@@ -5,5 +5,11 @@
 }
 
 body {
+    font-family: "Varela Round", sans-serif;
     
+
+}
+
+.form {
+    background-image: linear-gradient(#1391ff, #0b43db);
 }
