@@ -63,3 +63,38 @@ body {
     border-bottom: 1px solid rgba(231, 231, 231, 0.8);
 }
 
+#email,
+#email::placeholder {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+#password,
+#password::placeholder {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+#password2,
+#password2::placeholder {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
