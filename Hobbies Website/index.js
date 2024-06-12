@@ -8,7 +8,7 @@ initializeSlider();
 
 function initializeSlider(){
 
-    slides[slideIndex].classList.add("displaySlide");
+    slide[slideIndex].classList.add("displaySlide");
 }
 
 function showSlide(index) {

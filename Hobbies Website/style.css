@@ -95,6 +95,7 @@ div {
     display: flex;
     flex-direction: row;
 }
+
 .images {
     background: rgb(212, 245, 191);
     color: gray;
