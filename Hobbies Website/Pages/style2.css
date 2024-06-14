@@ -1,7 +1,53 @@
-
-
 body {
-    background: #f2f2f2;
+    background: rgb(250, 205, 168);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serife;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER  */
+header {
+    background: rgb(253, 183, 183);
+    background-image: url(../images/estantedelivros.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 260px;
+    padding: 20px;
+    text-align: center;          
+}
+h1 {
+    color: white;
+    font-family: Dancing Script
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+li {
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 20px;
+}
+
+.genres {
+    background: whitesmoke;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 @keyframes slide {
@@ -13,6 +59,13 @@ body {
     }
 }
 
+.genres {
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
 .carousel {
     overflow: hidden;
     padding: 60px 0; /*up - right bottom left*/
@@ -21,9 +74,17 @@ body {
 
 .image-slide {
     white-space: nowrap;
-    animation: 5s slide infinite linear;
+    animation: 20s slide infinite linear;
 }
 .image-slide img {
     height: 200px;
     margin: 0 40px;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
 }
