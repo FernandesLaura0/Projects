@@ -50,6 +50,14 @@ li {
     flex-direction: row;
 }
 
+.genres div {
+    background: lightgray; /* Add a gray background to the divs */
+    padding: 10px; /* Add padding inside the divs */
+    border-radius: 5px; /* Optional: add rounded corners */
+    text-align: center; /* Optional: center text in the divs */
+    margin: 50px;
+}
+
 @keyframes slide {
     from {
         transform: translateX(0);
