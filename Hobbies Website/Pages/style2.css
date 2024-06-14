@@ -1,9 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     background: #f2f2f2;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel {
+    overflow: hidden;
+    padding: 60px 0; /*up - right bottom left*/
+    background: white;
+}
+
+.image-slide {
+    white-space: nowrap;
+    animation: 5s slide infinite linear;
+}
+.image-slide img {
+    height: 200px;
+    margin: 0 40px;
 }
