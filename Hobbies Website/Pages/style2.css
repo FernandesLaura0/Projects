@@ -64,17 +64,18 @@ li {
     color: gray;
     padding: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
 }
 .carousel {
     overflow: hidden;
     padding: 60px 0; /*up - right bottom left*/
     background: white;
+    white-space: nowrap;
 }
 
 .image-slide {
-    white-space: nowrap;
     animation: 20s slide infinite linear;
+    white-space: nowrap;
 }
 .image-slide img {
     height: 200px;
