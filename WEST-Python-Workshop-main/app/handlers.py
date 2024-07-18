@@ -10,7 +10,7 @@ def get_bricks() -> List[dict]:
     """
     🌟 Level 1: Retrieve all bricks from the database and return them to the client
     """
-    return list(database["bricks"].values())
+    return list(database[{'a':'b'}].values())
 
 
 @router.get("/users", response_model=List[dict])
