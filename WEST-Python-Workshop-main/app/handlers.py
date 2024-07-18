@@ -55,7 +55,20 @@ def get_brick(color: str, user: Optional[str] = None) -> dict:
              (raise HTTPException(status_code=401))
              If the user does have access to the brick, return the brick!
     """
-    raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+    #raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+
+    brick = database["bricks"].get(color)
+    if not brick:
+        raise HTTPException(status_code=404, detail="Brick not found")
+
+    if user:
+        user_data = database["users"].get(user)
+        if not user_data:
+            raise HTTPException(status_code=404, detail="User not found")
+        if not can_access(user_data, brick):
+            raise HTTPException(status_code=401, detail="Not Authorized")
+    
+    return brick
 
 
 @router.post("/bricks")
@@ -67,7 +80,12 @@ def create_brick(brick: dict) -> dict:
             (raise HTTPException(status_code=400))
             If the brick is successfully created, return the brick!
     """
-    raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+    #raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+    if brick["color"] in database["bricks"]:
+        raise HTTPException(status_code=400, detail="Brick already exists")
+    
+    database["bricks"][brick["color"]] = brick
+    return brick
 
 
 @router.post("/users")
