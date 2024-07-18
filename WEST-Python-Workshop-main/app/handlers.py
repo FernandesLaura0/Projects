@@ -10,7 +10,7 @@ def get_bricks() -> List[dict]:
     """
     🌟 Level 1: Retrieve all bricks from the database and return them to the client
     """
-    return list(database[{'a':'b'}].values())
+    return list(database["bricks"].values())
 
 
 @router.get("/users", response_model=List[dict])
@@ -18,7 +18,7 @@ def get_users() -> List[dict]:
     """
     🌟 Level 1:  Retrieve all users from the database and return them to the client
     """
-    raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+    raise HTTPException(status_code=501, detail="users")
 
 
 @router.get("/users/{name}")
@@ -28,7 +28,13 @@ def get_user(name: str) -> dict:
              Find the user with the given name and return it to the client
              If the user does not exist, return a 404 error (raise HTTPException(status_code=404))
     """
-    raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+    #raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+
+    user = database["users"].get(name)
+    if user:
+        return user
+    else:
+        raise HTTPException(status_code=404, detail="User not found")
 
 
 @router.get("/bricks/{color}")
